@@ -1,0 +1,15 @@
+module BCDconvertor
+(
+input [3:0]in,
+output [6:0]HEX
+)
+
+reg [6:0] temp;
+assign HEX=temp;
+
+always @(in)
+begin
+case(in)
+4b'0000: temp=7b'1000000;
+end
+endmodule
